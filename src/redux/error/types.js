@@ -1,0 +1,3 @@
+export const TEMPORARY_ERROR = 'TEMPORARY_ERROR';
+export const CONSTANT_ERROR = 'CONSTANT_ERROR';
+export const REMOVE_ERROR = 'REMOVE_ERROR';

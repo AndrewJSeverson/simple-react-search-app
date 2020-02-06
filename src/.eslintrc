@@ -1,0 +1,36 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest/globals": true
+  },
+  "globals": {
+    "Suspense": true
+  },
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import",
+    "jest"
+  ],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-unused-expressions": 0,
+    "react/forbid-prop-types": 0,
+    "react/prefer-stateless-function": 0,
+    "import/prefer-default-export": 0,
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxBOF": 1}],
+    "import/no-cycle": 0,
+    "max-len": ["error", { "code": 120, "ignoreStrings": true, "ignoreTemplateLiterals": true }],
+    "react/jsx-props-no-spreading": 0,
+    "multiline-ternary": ["error", "always"],
+    "operator-linebreak": ["error", "before", { "overrides": { "?": "before" } }],
+    "react/jsx-indent": [2, 2, { "indentLogicalExpressions": true, "checkAttributes": true }],
+    "react/jsx-curly-newline": [2, "consistent"],
+    "react/jsx-one-expression-per-line": 0,
+    "object-curly-newline": ["error", { "minProperties": 2 }],
+    "object-property-newline": ["error", { "allowMultiplePropertiesPerLine": false, "allowAllPropertiesOnSameLine": false }],
+  }
+}

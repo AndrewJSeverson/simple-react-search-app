@@ -1,0 +1,20 @@
+$transitionLength: 600ms;
+
+header.transparent {
+  background-color: transparent;
+  box-shadow: none;
+  border: 1px solid transparent;
+  -webkit-transition: background-color $transitionLength linear,  box-shadow $transitionLength linear;
+  -ms-transition: background-color $transitionLength linear,  box-shadow $transitionLength linear;
+  transition: background-color $transitionLength linear,  box-shadow $transitionLength linear;
+}
+header {
+  -webkit-transition: background-color $transitionLength linear,  box-shadow $transitionLength linear;
+  -ms-transition: background-color $transitionLength linear,  box-shadow $transitionLength linear;
+  transition: background-color $transitionLength linear,  box-shadow $transitionLength linear;
+}
+
+main {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+}
