@@ -23,6 +23,12 @@ npm start
 npm run lint
 ```
 
+## Testing
+```bash
+npm run test
+npm run test:coverage
+```
+
 ## Available Scripts - through create-react-app
 
 In the project directory, you can run:
