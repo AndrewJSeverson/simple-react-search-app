@@ -2,14 +2,16 @@ import React from 'react';
 import {
   makeStyles,
   Grid,
-  Typography,
 } from '@material-ui/core';
+
+import SearchArea from './components/SearchArea';
+import SearchResultsList from './components/SearchResultsList';
 
 import styles from './styles';
 
 const useStyles = makeStyles(styles);
 
-const NotFoundPage = () => {
+const HomePage = () => {
   const classes = useStyles();
 
   return (
@@ -23,16 +25,14 @@ const NotFoundPage = () => {
       alignItems="center"
       className={classes.pageContainer}
     >
-      <div className={classes.card}>
-        <Grid container item justify="center">
-          <Typography component="h1" variant="h1" className={classes.pageTitle} gutterBottom>
-              Select Your Search
-          </Typography>
-
-        </Grid>
-      </div>
+      <Grid container item justify="center">
+        <SearchArea />
+      </Grid>
+      <Grid container item justify="center">
+        <SearchResultsList />
+      </Grid>
     </Grid>
   );
 };
 
-export default NotFoundPage;
+export default HomePage;

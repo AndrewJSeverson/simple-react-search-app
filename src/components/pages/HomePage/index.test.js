@@ -1,11 +1,11 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { renderWithRedux } from '../../../utils/test-utils';
 import HomePage from '.';
 
 describe('HomePage container tests', () => {
   test('renders the home page title', () => {
-    const { getByText } = render(<HomePage />);
-    const foundElement = getByText('Select Your Search');
+    const { queryByTestId } = renderWithRedux(<HomePage />);
+    const foundElement = queryByTestId('search-text-box');
     expect(foundElement).toBeInTheDocument();
   });
 });

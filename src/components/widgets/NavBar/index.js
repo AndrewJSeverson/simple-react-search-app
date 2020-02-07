@@ -19,7 +19,7 @@ const NavBarComponent = () => {
     <AppBar position="fixed" color="primary">
       <Toolbar>
         <Typography variant="h6" className={classes.title}>
-        Simple Search
+          Simple Search
         </Typography>
         <Link
           to="/"
