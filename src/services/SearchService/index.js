@@ -1,5 +1,7 @@
 import HttpService from '../HttpService';
 
+const TV_MAZE_API_ENDPOINT = 'https://api.tvmaze.com';
+
 export default class SearchService {
   static searchTvShows(searchText) {
     if (!searchText || searchText.length <= 0) {
@@ -9,4 +11,6 @@ export default class SearchService {
   }
 }
 
-SearchService.httpService = new HttpService({ baseURL: '/api/tv' });
+SearchService.httpService = new HttpService({ baseURL: process.env.NODE_ENV === 'production'
+  ? TV_MAZE_API_ENDPOINT
+  : '/api/tv' });

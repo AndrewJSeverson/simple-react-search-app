@@ -2,7 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-NOTE that create-react-app comes with many utilities and packages through the 'react-scripts' package including webpack, babel, and many others. I chose to keep this package for simplicity but production builds should eject and only include packages being used by the application.
+Note that create-react-app comes with many utilities and packages through the 'react-scripts' package including webpack, babel, and many others. I chose to keep this package for simplicity but production builds might eject and only include packages being used by the application. Webpack should tree shake and remove any and all unused dependencies, so your production build won't have dead weight if kept.
+
+This project uses the [TVMAZE API](http://www.tvmaze.com/api) to search on and return tv shows. The specific API used does not have pagination and will return a max 10 results based on the relevancy of the search term to the shows.
+
+## Access Live Version
+
+A working version of the app is deployed into AWS using S3 and CloudFront
+[http://simple-react-search-app.s3-website-us-east-1.amazonaws.com](http://simple-react-search-app.s3-website-us-east-1.amazonaws.com)
+[http://dfock12pvuxfe.cloudfront.net](http://dfock12pvuxfe.cloudfront.net)
 
 ## Installing
 

@@ -31,9 +31,11 @@ const AboutPage = () => {
 
           <Typography variant="body1" gutterBottom className={classes.subtitle}>
               This application was built to demonstrate modern front-end technologies.
-              The seed of the project was generated from <a href="https://github.com/facebook/create-react-app" target="blank">create react app</a>. Though
-              this project and dependency provides an easy starting point for React applications,
-              it can bloat a build with all the packages included in the react-scripts package.
+              The seed of the project was generated from <a href="https://github.com/facebook/create-react-app" target="blank">create react app</a>.
+              This project and dependency provides an easy starting point for React applications,
+              but can include many packages and libraries that end up never being used.
+              Webpack should tree shake and remove any and all unused dependencies, so your production
+              build won&apos;t have dead weight if kept.
           </Typography>
 
           <Typography variant="body1" component="div" gutterBottom className={classes.subtitle}>
