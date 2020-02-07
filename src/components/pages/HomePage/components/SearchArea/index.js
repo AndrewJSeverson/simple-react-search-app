@@ -37,6 +37,13 @@ const SearchAreaComponent = () => {
     setSearchText(e.target.value);
   };
 
+  /*
+    Another approach to searching would be for auto search
+    with debouncing. This method will auto fetch results
+    after the user finishes typing so they won't have to press
+    enter or the submit button. Ultimately the decision
+    should be decided by UX preference.
+  */
   const handleSearch = () => {
     const currentSearchText = searchText;
     setSearchedText(currentSearchText);
@@ -45,6 +52,7 @@ const SearchAreaComponent = () => {
   };
 
   const keyPress = (e) => {
+    // 13 is the enter key press code
     if (e.keyCode === 13 && searchText.length > 0) {
       handleSearch();
     }
