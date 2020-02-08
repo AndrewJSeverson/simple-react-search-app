@@ -24,12 +24,14 @@ export const defaultSearch = { search: {
   isEmptySearch: false,
   isSearching: false,
   searchingError: false,
+  sortField: 'name',
 } };
 export const searchingSearch = { search: {
   searchResults: [],
   isEmptySearch: false,
   isSearching: true,
   searchingError: false,
+  sortField: 'name',
 } };
 export const resultWithAllData = {
   id: 26476,

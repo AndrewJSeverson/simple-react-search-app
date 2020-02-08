@@ -35,4 +35,11 @@ describe('search actions', () => {
 
     actions.searchTvShows()(dispatch);
   });
+
+  it('should update sort field', () => {
+    expect(actions.changeSortField('language')).toEqual({
+      type: types.CHANGE_SORT_FIELD,
+      sortField: 'language',
+    });
+  });
 });

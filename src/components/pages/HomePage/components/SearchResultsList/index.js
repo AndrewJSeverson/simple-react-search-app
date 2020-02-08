@@ -22,12 +22,14 @@ const SearchResultsListComponent = (props) => {
   const classes = useStyles();
 
   // redux state
-  const { searchResults } = useSelector((state) => state.search);
+  const {
+    searchResults, sortField,
+  } = useSelector((state) => state.search);
 
   return (
     <Grid item xs={12}>
       {
-        sortBy(searchResults, ['name']).map((show) => (
+        sortBy(searchResults, [sortField]).map((show) => (
           <Card className={classes.root} key={show.id}>
             <Grid item container className={classes.gridItem}>
               <Grid item xs={12} sm={8} md={9}>

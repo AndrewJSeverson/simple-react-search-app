@@ -13,3 +13,8 @@ export const searchTvShows = (searchText) => (dispatch) => {
     responseName: 'results',
   });
 };
+
+export const changeSortField = (sortField) => ({
+  type: types.CHANGE_SORT_FIELD,
+  sortField,
+});

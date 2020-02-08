@@ -8,6 +8,7 @@ describe('(Reducer) Search reducer', () => {
       isEmptySearch: false,
       isSearching: false,
       searchingError: false,
+      sortField: 'name',
     });
   });
 
@@ -69,5 +70,14 @@ describe('(Reducer) Search reducer', () => {
     expect(state.searchingError).toEqual(true);
     expect(state.isSearching).toEqual(false);
     expect(state.searchResults).toEqual([]);
+  });
+
+  it('should handle CHANGE_SORT_FIELD', () => {
+    const state = reducer({ searchResults: 'name' }, {
+      type: types.CHANGE_SORT_FIELD,
+      sortField: 'language',
+    });
+
+    expect(state.sortField).toEqual('language');
   });
 });

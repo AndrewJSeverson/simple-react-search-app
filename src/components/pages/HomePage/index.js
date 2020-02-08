@@ -5,6 +5,7 @@ import {
 } from '@material-ui/core';
 
 import SearchArea from './components/SearchArea';
+import SearchResultsSort from './components/SearchResultsSort';
 import SearchResultsList from './components/SearchResultsList';
 
 import styles from './styles';
@@ -27,6 +28,9 @@ const HomePage = () => {
     >
       <Grid container item justify="center">
         <SearchArea />
+      </Grid>
+      <Grid container item justify="flex-end">
+        <SearchResultsSort />
       </Grid>
       <Grid container item justify="center">
         <SearchResultsList />
