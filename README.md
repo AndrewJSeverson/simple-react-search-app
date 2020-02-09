@@ -8,8 +8,8 @@ This project uses the [TVMAZE API](http://www.tvmaze.com/api) to search on and r
 
 ## Access Live Version
 
-A working version of the app is deployed into AWS using S3 and CloudFront
-[http://simple-react-search-app.s3-website-us-east-1.amazonaws.com](http://simple-react-search-app.s3-website-us-east-1.amazonaws.com)
+A working version of the app is deployed into AWS using S3 and CloudFront  
+[http://simple-react-search-app.s3-website-us-east-1.amazonaws.com](http://simple-react-search-app.s3-website-us-east-1.amazonaws.com)  
 [http://dfock12pvuxfe.cloudfront.net](http://dfock12pvuxfe.cloudfront.net)
 
 ## Installing
