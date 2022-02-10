@@ -14,7 +14,7 @@
     "eslint-plugin-jest": "^23.6.0",
     "http-proxy-middleware": "^0.20.0",
     "lodash": "^4.17.15",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "object-assign": "^4.1.1",
     "promise": "^8.0.3",
     "prop-types": "^15.7.2",
